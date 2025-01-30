@@ -10,6 +10,7 @@ class LandingPageController extends Controller
     public function index()
     {
         $program = Program::all();
+
         return view('frontend.index', compact('program'));
     }
 }
