@@ -71,5 +71,6 @@ Route::get('/admin/partner/edit/{id}', [PartnerController::class, 'edit'])->name
 Route::put('/admin/partner/update/{id}', [PartnerController::class, 'update'])->name('admin.partner.update');
 Route::get('/admin/partner/delete/{id}', [PartnerController::class, 'delete'])->name('admin.partner.delete');
 
-Route::get('/admin/company', [CompanyController::class, 'create'])->name('admin.company');
+Route::get('/admin/company', [CompanyController::class, 'index'])->name('admin.company');
+Route::put('/admin/company/update/{id}', [CompanyController::class, 'update'])->name('admin.company.update');
 });
