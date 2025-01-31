@@ -24,11 +24,11 @@ class GalleryController extends Controller
         ]);
 
         $nama_gambar = time() . '.' . $request->gambar->extension();
-        $request->gambar->move(public_path('image/program/'), $nama_gambar);
+        $request->gambar->move(public_path('image/gallery/'), $nama_gambar);
 
         Gallery::create([
             'nama' => $request->nama,
-            'gambar' =>'image/program/' . $nama_gambar
+            'gambar' =>'image/gallery/' . $nama_gambar
         ]);
 
         return redirect()->route('admin.gallery');
