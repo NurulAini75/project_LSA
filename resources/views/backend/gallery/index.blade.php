@@ -39,14 +39,14 @@
                                         </td>
                                         <td>{{ $item->nama }}</td>
                                         <td>
-                                            <img alt="{{ asset($item->gambar) }}" width="100" class="rounded-circle"
+                                            <img src="{{ asset($item->gambar) }}" width="100" class="rounded-circle"
                                                 width="35" data-toggle="tooltip" title="Wildan Ahdian">
                                         </td>
                                         <td>
                                             <a href="{{ route('admin.gallery.detail', $item->id) }}" class="btn btn-primary">Detail<a>
-                                                    <a href="{{ route('admin.gallery.edit') }}"
+                                                    <a href="{{ route('admin.gallery.edit', $item->id) }}"
                                                         class="btn btn-warning">edit</a>
-                                                    <a href="" class="btn btn-danger">Hapus</a>
+                                                    <a href="{{ route('admin.gallery.delete', $item->id) }}" class="btn btn-danger">Hapus</a>
                                         </td>
                                 @endforeach
                                 </tr>

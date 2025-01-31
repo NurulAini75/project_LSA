@@ -52,14 +52,14 @@
                                         <td>{{ $item->sub_judul }}
                         </div>
                         </td>
-                        <td>{{ $item->created_at->format('d F Y') }}</td>
+                        {{-- <td>{{ $item->created_at->format('d F Y') }}</td> --}}
                         <td>
                             <div class="badge badge-success">{{ $item->status }}</div>
                         </td>
                         <td>
                             <a href="{{ route('admin.program.detail', $item->id) }}" class="btn btn-primary">Detail<a>
-                            <a href="{{ route('admin.program.edit', $item->id) }}" class="btn btn-warning">edit</a>
-                            <a href="{{ route('admin.program.delete', $item->id) }}"class="btn btn-danger">Hapus</a>
+                                    <a href="{{ route('admin.program.edit', $item->id) }}" class="btn btn-warning">edit</a>
+                                    <a href="{{ route('admin.program.delete', $item->id) }}"class="btn btn-danger">Hapus</a>
                         </td>
                         </tr>
                         @endforeach

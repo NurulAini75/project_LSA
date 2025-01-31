@@ -40,6 +40,7 @@ class PartnerController extends Controller
         $data = Partner::findOrFail($id);
         return view('backend.partner.detail', compact('data'));
     }
+    
     public function edit($id){
         $data = Partner::findOrFail($id);
         return view('backend.partner.edit', compact('data'));
