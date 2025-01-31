@@ -20,14 +20,9 @@ class LandingPagecontroller extends Controller
         $gallery = Gallery::all();
         $partner = Partner::all();
         $news = News::all();
+        $company = user::findOrFail(1);
 
         // Kirim data ke view 'frontend'
-        return view('frontend', compact('program', 'gallery', 'partners', 'news'));
-    }
-
-    public function read(){
-        $company = user ::all();
-
-        return view('frontend', compact ('company'));
+        return view('frontend.index', compact('program', 'gallery', 'partner', 'news', 'company'));
     }
 }

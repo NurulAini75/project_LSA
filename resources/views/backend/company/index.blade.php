@@ -43,7 +43,7 @@
 
                             <div class="form-group">
                                 <label>Alamat</label>
-                                <textarea type="text" class="form-control" name="alamat1">{{ $data->alamat }}</textarea>
+                                <textarea type="text" class="form-control" name="alamat1">{{ $data->alamat1 }}</textarea>
                             </div>
 
                             <div class="form-group">

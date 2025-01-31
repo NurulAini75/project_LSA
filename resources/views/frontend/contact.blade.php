@@ -7,9 +7,8 @@
             <div class="flex bg-green_lsa-50 box-border border-2 border-green_lsa-300 w-auto rounded-xl mx-16 px-5 py-3">
                 <img src="{{ asset('asset/lokasi.png') }}" class="w-8 h-8">
                 <div class="ml-5">
-                    <h1 class="text-green_lsa-300 font-Poppins text-xl">Lembaga Sinergi Analitika Lombok</h1>
-                    <p class="text-lg mt-2">Perumahan Griya Rumak Asri Blok D No.9, Kediri,
-                        Lombok Barat, 83362</p>
+                    <h1 class="text-green_lsa-300 font-Poppins text-xl">{{ $company->nama_perusahaan1 }}</h1>
+                    <p class="text-lg mt-2">{{ $company->alamat1 }}</p>
                 </div>
             </div>
             <div

@@ -17,12 +17,7 @@
             </div>
         </div>
         <div>
-            <p class="cols-span-2 text-3xl font-Poppins text-right mr-10"><span class="font-bold">LEMBAGA SINERGI
-                    ANALITIKA </span>adalah lembaga yang berfokus pada research di bidang media (Media Online dan
-                Media Sosial) dan Kegiatan kemasyarakatan. Lembaga ini bertujuan untuk menghadirkan aspirasi
-                masyarakat agar dapat didengar oleh stakeholder. Hasil analitik akan dibuat dalam bentuk Laporan dan
-                dipublikasikan ke berbagai kanal media, serta digunakan untuk merancang program-program yang
-                berdampak positif bagi masyarakat</p>
+            <p class="cols-span-2 text-3xl font-Poppins text-right mr-10">{{ $company->about }}</p>
         </div>
     </div>
 </div>
